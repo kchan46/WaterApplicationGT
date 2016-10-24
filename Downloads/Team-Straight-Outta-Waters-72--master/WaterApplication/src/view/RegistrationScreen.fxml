@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<?import java.lang.String?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RegistrationScreenController">
+   <children>
+      <Button fx:id="registerButton" layoutX="200.0" layoutY="355.0" mnemonicParsing="false" text="Register" onAction="#handleRegister" />
+      <Button fx:id="cancelRegistration" layoutX="325.0" layoutY="355.0" mnemonicParsing="false" text="Cancel" onAction="#handleCancelRegistration" />
+      <Label layoutX="30.0" layoutY="37.0" text="Name" />
+      <TextField fx:id="registerNameField" layoutX="113.0" layoutY="32.0" />
+      <TextField fx:id="registerUsernameField" layoutX="113.0" layoutY="102.0" />
+      <TextField fx:id="registerPasswordField" layoutX="113.0" layoutY="169.0" />
+      <Label layoutX="32.0" layoutY="107.0" text="Username" />
+      <Label layoutX="32.0" layoutY="174.0" text="Password" />
+      <ComboBox fx:id="accountPicker" layoutX="149.0" layoutY="267.0" prefWidth="150.0" promptText="Pick one" visibleRowCount="4">
+            <items>
+                  <FXCollections fx:factory="observableArrayList">
+                        <String fx:id="userCombo" fx:value="User"/>
+                        <String fx:id="managerCombo" fx:value="Manager"/>
+                        <String fx:id="adminCombo" fx:value="Admin"/>
+                        <String fx:id="workerCombo" fx:value="Worker"/>
+                  </FXCollections>
+            </items>
+            <value>
+                <String fx:value="User"/>
+            </value>
+      </ComboBox>
+      <Label layoutX="30.0" layoutY="272.0" text="Account Type" />
+   </children>
+</Pane>

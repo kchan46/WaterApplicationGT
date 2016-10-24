@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.76-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainScreenController">
+   <children>
+      <Button fx:id="editProfileMS" layoutX="254.0" layoutY="293.0" mnemonicParsing="false" onAction="#handleEditProfile" text="Edit Profile" />
+      <Button fx:id="logoutMS" layoutX="266.0" layoutY="355.0" mnemonicParsing="false" onAction="#handleLogOut" text="Logout" />
+      <ComboBox fx:id="chooseReportMS" layoutX="29.0" layoutY="49.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#displayReports" prefHeight="25.0" prefWidth="237.0" promptText="Choose Report" visibleRowCount="8" />
+      <Button fx:id="loadReportMS" layoutX="272.0" layoutY="49.0" mnemonicParsing="false" onAction="#handleLoadReport" text="Load" />
+      <Button fx:id="submitReportMS" layoutX="327.0" layoutY="49.0" mnemonicParsing="false" onAction="#handleSubmitNewReport" text="Submit New Report" />
+      <Button fx:id="viewMap" layoutX="377.0" layoutY="49.0" mnemonicParsing="false" onAction="#handleViewMap" text="View Map" />
+   </children>
+</Pane>
